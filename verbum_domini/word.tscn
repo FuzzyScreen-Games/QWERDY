@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bah0goxqrnxil"]
+
+[ext_resource type="Script" uid="uid://df51xheexaius" path="res://verbum_domini/word.gd" id="1_hsdjt"]
+
+[node name="Word" type="Node2D" unique_id=2118729876]
+script = ExtResource("1_hsdjt")

@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://biv4dutqan07u"]
+
+[ext_resource type="PackedScene" uid="uid://dxf5i03pftm1a" path="res://verbum_domini/keyboard/key.tscn" id="1_6q5eu"]
+[ext_resource type="Texture2D" uid="uid://bdkw7u1hs5s5e" path="res://assets/font/vga_alphabet.png" id="2_nrd3h"]
+[ext_resource type="Script" uid="uid://ddh6py4vchiyp" path="res://verbum_domini/keyboard/enter.gd" id="2_rtkwj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtkwj"]
+size = Vector2(51, 20)
+
+[node name="enter" unique_id=1137237185 instance=ExtResource("1_6q5eu")]
+script = ExtResource("2_rtkwj")
+
+[node name="frame" parent="." index="0" unique_id=1986094175]
+position = Vector2(15.157896, 0)
+scale = Vector2(2.6842105, 1)
+
+[node name="letter" parent="." index="1" unique_id=1212159754]
+frame = 4
+
+[node name="letter2" type="Sprite2D" parent="." index="2" unique_id=397196631]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(8, 0)
+texture = ExtResource("2_nrd3h")
+hframes = 9
+vframes = 4
+frame = 13
+
+[node name="letter3" type="Sprite2D" parent="." index="3" unique_id=1371942759]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(15, 0)
+texture = ExtResource("2_nrd3h")
+hframes = 9
+vframes = 4
+frame = 19
+
+[node name="letter4" type="Sprite2D" parent="." index="4" unique_id=1828795616]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(23, 0)
+texture = ExtResource("2_nrd3h")
+hframes = 9
+vframes = 4
+frame = 4
+
+[node name="letter5" type="Sprite2D" parent="." index="5" unique_id=1967698727]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(31, 0)
+texture = ExtResource("2_nrd3h")
+hframes = 9
+vframes = 4
+frame = 17
+
+[node name="CollisionShape2D" parent="Area2D" parent_id_path=PackedInt32Array(689139030) index="0" unique_id=2057039432]
+position = Vector2(15.5, 0)
+shape = SubResource("RectangleShape2D_rtkwj")

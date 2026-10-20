@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://c66wm84oyqqow"]
+
+[ext_resource type="Script" uid="uid://b1667bsujlnqx" path="res://verbum_domini/keyboard/keyboard.gd" id="1_s3lmb"]
+[ext_resource type="PackedScene" uid="uid://dxf5i03pftm1a" path="res://verbum_domini/keyboard/key.tscn" id="2_66sbh"]
+[ext_resource type="PackedScene" uid="uid://beixhuuljv0bc" path="res://verbum_domini/keyboard/backspace.tscn" id="3_3y6u6"]
+[ext_resource type="PackedScene" uid="uid://biv4dutqan07u" path="res://verbum_domini/keyboard/enter.tscn" id="4_ca77x"]
+
+[node name="Keyboard" type="Node2D" unique_id=1419874257]
+script = ExtResource("1_s3lmb")
+
+[node name="A" parent="." unique_id=1137237185 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(10, 34)
+press_length = 0.2
+letter_val = "A"
+
+[node name="B" parent="." unique_id=1754080240 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(98, 58)
+press_length = 0.2
+letter_val = "B"
+
+[node name="C" parent="." unique_id=1851642124 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(54, 58)
+press_length = 0.2
+letter_val = "C"
+
+[node name="D" parent="." unique_id=989916701 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(54, 34)
+press_length = 0.2
+letter_val = "D"
+
+[node name="E" parent="." unique_id=1499581465 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(56, 10)
+press_length = 0.2
+letter_val = "E"
+
+[node name="F" parent="." unique_id=1049988114 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(76, 34)
+press_length = 0.2
+letter_val = "F"
+
+[node name="G" parent="." unique_id=707669608 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(98, 34)
+press_length = 0.2
+letter_val = "G"
+
+[node name="H" parent="." unique_id=1436802162 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(120, 34)
+press_length = 0.2
+letter_val = "H"
+
+[node name="I" parent="." unique_id=337377695 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(171, 10)
+press_length = 0.2
+letter_val = "I"
+
+[node name="J" parent="." unique_id=1430812198 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(142, 34)
+press_length = 0.2
+letter_val = "J"
+
+[node name="K" parent="." unique_id=1197164360 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(164, 34)
+press_length = 0.2
+letter_val = "K"
+
+[node name="L" parent="." unique_id=1484832586 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(186, 34)
+press_length = 0.2
+letter_val = "L"
+
+[node name="M" parent="." unique_id=581320278 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(142, 58)
+press_length = 0.2
+letter_val = "M"
+
+[node name="N" parent="." unique_id=686134159 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(120, 58)
+press_length = 0.2
+letter_val = "N"
+
+[node name="O" parent="." unique_id=821506947 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(194, 10)
+press_length = 0.2
+letter_val = "O"
+
+[node name="P" parent="." unique_id=547352274 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(217, 10)
+press_length = 0.2
+letter_val = "P"
+
+[node name="Q" parent="." unique_id=1273539496 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(10, 10)
+press_length = 0.2
+letter_val = "Q"
+
+[node name="R" parent="." unique_id=556625393 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(79, 10)
+press_length = 0.2
+letter_val = "R"
+
+[node name="S" parent="." unique_id=685795818 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(32, 34)
+press_length = 0.2
+letter_val = "S"
+
+[node name="T" parent="." unique_id=586563669 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(102, 10)
+press_length = 0.2
+letter_val = "T"
+
+[node name="U" parent="." unique_id=137978099 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(148, 10)
+press_length = 0.2
+letter_val = "U"
+
+[node name="V" parent="." unique_id=576135903 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(76, 58)
+press_length = 0.2
+letter_val = "V"
+
+[node name="W" parent="." unique_id=681206225 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(33, 10)
+press_length = 0.2
+letter_val = "W"
+
+[node name="X" parent="." unique_id=1285489254 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(32, 58)
+press_length = 0.2
+letter_val = "X"
+
+[node name="Y" parent="." unique_id=425221558 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(125, 10)
+press_length = 0.2
+letter_val = "Y"
+
+[node name="Z" parent="." unique_id=833225627 instance=ExtResource("2_66sbh")]
+unique_name_in_owner = true
+position = Vector2(10, 58)
+press_length = 0.2
+letter_val = "Z"
+
+[node name="backspace" parent="." unique_id=1283693043 instance=ExtResource("3_3y6u6")]
+unique_name_in_owner = true
+position = Vector2(207, 34)
+press_length = 0.2
+
+[node name="enter" parent="." unique_id=1131675690 instance=ExtResource("4_ca77x")]
+unique_name_in_owner = true
+position = Vector2(164, 58)
+press_length = 0.2
+letter_val = "rtn"

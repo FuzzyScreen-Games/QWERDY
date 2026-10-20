@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dxf5i03pftm1a"]
+
+[ext_resource type="Script" uid="uid://riso1hm27twj" path="res://verbum_domini/keyboard/key.gd" id="1_bcncr"]
+[ext_resource type="Texture2D" uid="uid://dsiqw2m1nuy0a" path="res://assets/letter_frame.png" id="2_su1aj"]
+[ext_resource type="Texture2D" uid="uid://bdkw7u1hs5s5e" path="res://assets/font/vga_alphabet.png" id="3_4mhrb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcncr"]
+
+[node name="key" type="Node2D" unique_id=1137237185]
+script = ExtResource("1_bcncr")
+letter_val = ""
+
+[node name="frame" type="Sprite2D" parent="." unique_id=1986094175]
+texture_repeat = 2
+texture = ExtResource("2_su1aj")
+hframes = 2
+vframes = 4
+
+[node name="letter" type="Sprite2D" parent="." unique_id=1212159754]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("3_4mhrb")
+hframes = 9
+vframes = 4
+
+[node name="Timer" type="Timer" parent="." unique_id=1004938947]
+wait_time = 0.2
+one_shot = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=689139030]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2057039432]
+shape = SubResource("RectangleShape2D_bcncr")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timeout"]
+[connection signal="input_event" from="Area2D" to="." method="_on_key_pressed"]

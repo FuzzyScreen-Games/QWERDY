@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c8dp6tb4xcuvg"]
+
+[ext_resource type="Script" uid="uid://c0je1msteebqp" path="res://verbum_domini/keyboard/verbum_domini.gd" id="1_u5nsd"]
+[ext_resource type="Script" uid="uid://df51xheexaius" path="res://verbum_domini/word.gd" id="2_i2bdq"]
+[ext_resource type="PackedScene" uid="uid://c66wm84oyqqow" path="res://verbum_domini/keyboard/keyboard.tscn" id="3_1ecd2"]
+
+[node name="Game" type="Node2D" unique_id=2007760303]
+script = ExtResource("1_u5nsd")
+
+[node name="Word" type="Node2D" parent="." unique_id=1701917837]
+position = Vector2(132, 140)
+script = ExtResource("2_i2bdq")
+length = 5
+metadata/_custom_type_script = "uid://df51xheexaius"
+
+[node name="Keyboard" parent="." unique_id=1419874257 instance=ExtResource("3_1ecd2")]
+position = Vector2(128, 226)
+
+[connection signal="key_pressed" from="Keyboard" to="Word" method="parse_letter"]

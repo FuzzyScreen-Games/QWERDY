@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://beixhuuljv0bc"]
+
+[ext_resource type="PackedScene" uid="uid://dxf5i03pftm1a" path="res://verbum_domini/keyboard/key.tscn" id="1_qr044"]
+[ext_resource type="Script" uid="uid://g7ows8n3n5yx" path="res://verbum_domini/keyboard/backspace.gd" id="2_3ce5d"]
+[ext_resource type="Texture2D" uid="uid://bdkw7u1hs5s5e" path="res://assets/font/vga_alphabet.png" id="2_duek1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_duek1"]
+size = Vector2(42, 20)
+
+[node name="backspace" unique_id=1137237185 instance=ExtResource("1_qr044")]
+script = ExtResource("2_3ce5d")
+letter_val = "del"
+
+[node name="frame" parent="." index="0" unique_id=1986094175]
+position = Vector2(10.894737, 0)
+scale = Vector2(2.2105262, 1)
+
+[node name="letter" parent="." index="1" unique_id=1212159754]
+position = Vector2(4, 0)
+frame = 27
+
+[node name="letter_mid" type="Sprite2D" parent="." index="2" unique_id=2062739711]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13, 0)
+texture = ExtResource("2_duek1")
+hframes = 9
+vframes = 4
+frame = 28
+
+[node name="letter_right" type="Sprite2D" parent="." index="3" unique_id=1733400074]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22, 0)
+texture = ExtResource("2_duek1")
+hframes = 9
+vframes = 4
+frame = 29
+
+[node name="CollisionShape2D" parent="Area2D" parent_id_path=PackedInt32Array(689139030) index="0" unique_id=2057039432]
+position = Vector2(12, 0)
+shape = SubResource("RectangleShape2D_duek1")

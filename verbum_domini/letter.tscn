@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cxjddlwks83uw"]
+
+[ext_resource type="Script" uid="uid://je4xfngv4b7v" path="res://verbum_domini/letter.gd" id="1_8rujv"]
+[ext_resource type="Texture2D" uid="uid://dsiqw2m1nuy0a" path="res://assets/letter_frame.png" id="2_no8c4"]
+[ext_resource type="Texture2D" uid="uid://bdkw7u1hs5s5e" path="res://assets/font/vga_alphabet.png" id="3_1inpf"]
+
+[node name="Letter" type="Node2D" unique_id=837742527]
+script = ExtResource("1_8rujv")
+
+[node name="frame" type="Sprite2D" parent="." unique_id=1904877431]
+texture = ExtResource("2_no8c4")
+hframes = 2
+vframes = 4
+frame = 2
+
+[node name="letter" type="Sprite2D" parent="." unique_id=844933368]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("3_1inpf")
+hframes = 9
+vframes = 4
+frame = 26
