@@ -1,6 +1,6 @@
 # Source-Available & Educational License
 
-Copyright (c) 2026 [Your Name / Handle]
+Copyright (c) 2026 FuzzyScreen Games LLC
 
 ## 1. Permissions & Educational Use
 You are free to:
